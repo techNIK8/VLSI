@@ -1,0 +1,15 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY NOT_GATE IS
+PORT( A: IN std_logic;
+	 O3: OUT std_logic);
+END NOT_GATE;
+
+ARCHITECTURE behv OF NOT_GATE IS
+BEGIN
+PROCESS (A)
+BEGIN
+	O3 <= NOT A;
+END PROCESS;
+END behv;		

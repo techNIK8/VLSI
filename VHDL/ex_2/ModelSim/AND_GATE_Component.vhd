@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY AND_GATE IS
+PORT( A: IN std_logic;
+	  B: IN std_logic;
+	 O1: OUT std_logic);
+END AND_GATE;
+
+ARCHITECTURE behv OF AND_GATE IS
+BEGIN
+PROCESS(A,B)
+BEGIN
+	O1 <= A AND B;
+END PROCESS;
+END behv;	

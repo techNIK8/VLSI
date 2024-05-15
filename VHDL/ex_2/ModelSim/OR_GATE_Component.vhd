@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+ENTITY OR_GATE IS
+PORT( A: IN std_logic;
+	  B: IN std_logic;
+	 O2: OUT std_logic);
+END OR_GATE;
+
+ARCHITECTURE behv OF OR_GATE IS
+BEGIN
+PROCESS(A,B)
+BEGIN
+	O2 <= A OR B;
+END PROCESS;
+END behv;	
